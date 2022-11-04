@@ -1,0 +1,269 @@
+$myred: #ea2f2f;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: -7rem;
+    height: 100px;
+    width: 100vw;
+    background-color: $myred;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        top: 0;
+        z-index: 1;
+    }
+
+    .titles{
+        padding-left: 10px;
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .one{
+            width: 40%;
+            text-align: center;
+            img{
+                width: 70px;
+            }
+        }
+
+        .two{
+            width: 60%;
+            h1{
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+
+    .tools{
+        position: absolute;
+        width: 270px;
+        height: 85%;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+
+        .one{
+            width: 20%;
+            img{
+                width: 85%;
+            }
+        }
+    }
+
+    .contact{
+        position: absolute;
+        right: 67px;
+        top: 10px;
+        width: 70px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+.sticky{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: sticky;
+
+    &.top{
+        background: url("../images/top.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &.second{
+        background: url("../images/photo-03.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .second-flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            h2{
+                font-size: 50px;
+                color: white;
+                text-shadow: 5px 2px 9px grey;
+                width: 90%;
+                text-align: center;
+            }
+        }
+
+        .arrow{
+            position: absolute;
+            right: 40px;
+            top: 8rem;
+            height: 70%;
+
+            img{
+                height: 100%;
+                filter: brightness(200);
+            }
+        }
+    }
+
+    &.third{
+        background-color: white;
+
+        .third-flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10%;
+            padding-bottom: 2.5rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            .third-flex-inner{
+                display: flex;
+                
+                align-items: center;
+                justify-content: left;
+                .one{
+                    width: 50%;
+
+                    h2{
+                        font-weight: 100;
+                        font-size: 1.7rem;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                    }
+
+                    &.two{
+                        width: 40%;
+                        height: 35vh;
+                    }
+                }
+            }
+
+        }
+
+        .application-content{
+            
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 20px;
+
+            .one{
+                width: 77%;
+                border: 3px solid $myred;
+                padding: 2rem;
+                h2{
+                    font-weight: 100;
+                    font-size: 18px;
+                }
+
+                .slack{
+                    
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    padding-top: 20px;
+                    padding-left: 35px;
+                    
+                    p{
+                        font-size: 15px;
+                        padding-right: 2rem;
+                    }
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+
+
+
+        }
+
+        .arrow{
+            position: absolute;
+            right: 40px;
+            top: 8rem;
+            height: 60%;
+
+            img{
+                height: 100%;
+            }
+        }
+
+        .talk{
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            width: 77px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header{
+        height: 150px;
+        .titles{
+            height: 100px;
+        }
+        .tools{
+            width: 200px;
+            top: 110px;
+            right: 10px;
+        }
+        .contact{
+            right: 20px;
+        }
+    }
+
+    .sticky{
+        &.second{
+            .arrow{
+                right: -30px;
+            }
+        }
+
+        &.third{
+            .third-flex{
+                padding-top: 100px;
+            }
+
+            .talk{
+                bottom: 11px;
+                right: 11px;
+            }
+
+            .arrow{
+                right: -30px;
+            }
+
+            .application-content{
+                .one{
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
