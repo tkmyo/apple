@@ -220,6 +220,46 @@ header{
             }
         }
     }
+
+    &.fourth {
+        background-color: white;
+
+        .fourth-flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10%;
+            padding-bottom: 2.5rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            .fourth-flex-inner{
+                display: flex;
+                
+                align-items: center;
+                justify-content: left;
+                .one{
+                    width: 50%;
+
+                    h2{
+                        font-weight: 100;
+                        font-size: 1.7rem;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                    }
+
+                    &.two{
+                        width: 40%;
+                        height: 35vh;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
 }
 
 @media screen and (max-width: 450px) {
@@ -263,6 +303,16 @@ header{
                 .one{
                     width: 65%;
                 }
+            }
+        }
+
+        &.fourth{
+            .fourth-flex{
+                padding-top: 100px;
+            }
+
+            .arrow{
+                right: -30px;
             }
         }
     }

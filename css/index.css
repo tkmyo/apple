@@ -268,6 +268,68 @@ header .contact img {
   width: 100%;
 }
 
+.sticky.fourth {
+  background-color: white;
+}
+
+.sticky.fourth .fourth-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.sticky.fourth .fourth-flex .fourth-flex-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.sticky.fourth .fourth-flex .fourth-flex-inner .one {
+  width: 50%;
+}
+
+.sticky.fourth .fourth-flex .fourth-flex-inner .one h2 {
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+
+.sticky.fourth .fourth-flex .fourth-flex-inner .one p {
+  font-size: 1.1rem;
+}
+
+.sticky.fourth .fourth-flex .fourth-flex-inner .one.two {
+  width: 40%;
+  height: 35vh;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background: #ea2f2f;
+}
+
+footer p {
+  color: #FFF;
+  text-align: center;
+  padding: 3vh 0px;
+}
+
 @media screen and (max-width: 450px) {
   header {
     height: 150px;
