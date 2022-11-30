@@ -272,7 +272,7 @@ header .contact img {
   background-color: white;
 }
 
-.sticky.fourth .fourth-flex {
+.fourth-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,7 +288,7 @@ header .contact img {
   padding-right: 3rem;
 }
 
-.sticky.fourth .fourth-flex .fourth-flex-inner {
+.fourth-flex .fourth-flex-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,20 +300,20 @@ header .contact img {
           justify-content: left;
 }
 
-.sticky.fourth .fourth-flex .fourth-flex-inner .one {
+.fourth-flex .fourth-flex-inner .one {
   width: 50%;
 }
 
-.sticky.fourth .fourth-flex .fourth-flex-inner .one h2 {
+.fourth-flex .fourth-flex-inner .one h2 {
   font-weight: 100;
   font-size: 1.7rem;
 }
 
-.sticky.fourth .fourth-flex .fourth-flex-inner .one p {
+.fourth-flex .fourth-flex-inner .one p {
   font-size: 1.1rem;
 }
 
-.sticky.fourth .fourth-flex .fourth-flex-inner .one.two {
+.fourth-flex .fourth-flex-inner .one.two {
   width: 40%;
   height: 35vh;
 }
@@ -328,6 +328,20 @@ footer p {
   color: #FFF;
   text-align: center;
   padding: 3vh 0px;
+}
+
+.title-usage {
+  margin-bottom: 1.2em;
+}
+
+.usage img {
+  width: 100%;
+  max-height: 50vh;
+  padding-left: 20px;
+}
+
+.third{
+  height: 200vh;
 }
 
 @media screen and (max-width: 450px) {
@@ -362,4 +376,11 @@ footer p {
     width: 65%;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .third{
+    height: 130vh;
+  } 
+}
+
 /*# sourceMappingURL=index.css.map */

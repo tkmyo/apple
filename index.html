@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ringo</title>
+    <title>Lingo</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
                 <img src="images/icon_top.png">
             </div>
             <div class="two">
-                <h1>Ringo</h1>
+                <h1>Lingo</h1>
             </div>
         </div>
         <div class="tools">
@@ -47,49 +47,33 @@
                 <div class="third-flex-inner">
                     <div class="one">
                         <h2>ITツールをもっと使いこなしたい。</h2>
-                        <p>Ringoならスラックとグーグルカレンダーとの連携からチャットボットの作り方まで知りたいことをチャットボットですぐに返してくれる。</p>
+                        <p>Lingoならスラックとグーグルカレンダーとの連携からチャットボットの作り方まで知りたいことをチャットボットですぐに返してくれる。</p>
                     </div>  
                     <div class="one two">
                         <div class="img"></div>
                     </div>
                 </div>
             </div>
-            <div class="application-content">
-                <div class="one">
-                    <h2>現在サービス利用可能アプリ</h2>
-                    <div id="slack_enter" class="slack">
-                        <div class="one-inner">
-                            <p>→<a href="https://abveuiwpractice.slack.com/">SlackBot を追加する</a></p>
-                        </div>
-                        <div class="one-inner">
-                            <img src="images/icon_slack.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="arrow">
-                <img src="images/stick-02.png">
-            </div>
-            <div class="talk">
-                <a href="#slack_enter"><img src="images/icon_talk.png"></a>
-            </div>
-        </div>
-        <div class="sticky fourth">
             <div class="fourth-flex">
                 <div class="fourth-flex-inner">
                     <div class="one">
-                        <h2>導入方法</h2>
+                        <h2 class="title-usage">Slack版 Ringo 導入手順</h2>
                         <p>
                           <ol>
-                            <li>Slack のワークスペースを開きます。</li>
-                            <li>左のメニューバーから app の横の＋をクリックします。</li>
-                            <li>APP ページの検索バーに「ringo」と入力し、ringo-demo2 のアプリが表示されるのでクリックしてください。それでこのアプリを使うことができます。
+                            <li>Slackのワークスペースを開きます。</li>
+                            <li>左のメニューバーから app の横の＋をクリックします。[画像②]</li>
+                            <li>APP ページの検索バーに「Ringo」と入力し、Ringo-demo2 のアプリが表示されるのでクリックしてください。それでこのアプリを使うことができます。[画像③]
                             </li>
                             <li>まず、初めに「なにができる」と入力してみてください</li>
                           </ol>
                         </p>
                         <p>わからないことがあればチャットボットから質問してください。</p>
-                    </div>  
+                        <p><a href="https://abveuiwpractice.slack.com/" target=”_blank”> SlackBot を追加する</a></p>
+                    </div>
+                    <div class="one two">
+                        <div class="img usage"><img src="./images/usage2.png" alt=""></div>
+                        <div class="img usage"><img src="./images/usage3.png" alt=""></div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -98,13 +82,5 @@
     <p>情報連携実習Ⅲ グループ8 チーム1</p>
 </footer>
     <script src="js/index.js"></script>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="test-bot"
-  agent-id="fd9221c8-38e8-4dc0-88a3-652aa66de21a"
-  language-code="ja"
-></df-messenger>
-
 </body>
 </html>
