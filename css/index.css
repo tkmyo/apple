@@ -62,7 +62,7 @@ header .tools {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 73%;/*right: 20%*//*headerアイコンの場所を修正*/
+  left: 78%;/*right: 20%*//*headerアイコンの場所を修正*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
