@@ -62,7 +62,7 @@ header .tools {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 20%;
+  right: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +70,6 @@ header .tools {
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
   text-align: center;
 }
 
